@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 public class PalindromeTest {
     @Test public void emptyStringShouldBeAPalindrome() {
-        assertTrue("Expected empty string to be a palindrome", isPalindrome(""));
+        Palindrome empty = new Palindrome();
+        assertTrue("Expected empty string to be a Palindrome.java", empty.isPalindrome(""));
     }
 }
