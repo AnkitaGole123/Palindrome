@@ -11,4 +11,13 @@ public class PalindromeTest {
         Palindrome empty = new Palindrome();
         assertTrue("Expected empty string to be a Palindrome.java", empty.isPalindrome(""));
     }
+    @Test public void oneStringShouldBePalindrome(){
+        Palindrome sigleString = new Palindrome();
+        assertTrue("Expected sigle string to be a Palindrome.java", sigleString.isPalindrome("a"));
+    }
+    @Test public void poojaStringShouldNotBePalindrome(){
+        Palindrome poojaString = new Palindrome();
+        assertFalse("Expected pooja string to be a Palindrome.java", poojaString.isPalindrome("pooja"));
+    }
+
 }
